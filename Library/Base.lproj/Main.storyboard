@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BgV-gE-QBm">
+                                <rect key="frame" x="101" y="81" width="118" height="30"/>
+                                <state key="normal" title="Facebook SDK"/>
+                                <connections>
+                                    <action selector="facebookClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SBI-wK-4gc"/>
+                                    <segue destination="9pH-Ug-W2G" kind="show" id="8DH-ix-ODG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fya-PD-gRg">
+                                <rect key="frame" x="79" y="119" width="163" height="30"/>
+                                <state key="normal" title="Google Admob SDK"/>
+                                <connections>
+                                    <action selector="googleAdmobClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yTU-Ah-I8x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZf-6o-vys">
+                                <rect key="frame" x="79" y="157" width="163" height="30"/>
+                                <state key="normal" title="Flurry SDK"/>
+                                <connections>
+                                    <action selector="flurryClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LER-ZQ-f7M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9g-ud-zoh">
+                                <rect key="frame" x="79" y="195" width="163" height="30"/>
+                                <state key="normal" title="Purchase SDK"/>
+                                <connections>
+                                    <action selector="purchaseClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SbU-F3-gaK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="臻聚第三方SDK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bc-1C-aFk">
+                                <rect key="frame" x="99" y="28" width="123" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAg-Zp-Byl">
+                                <rect key="frame" x="79" y="233" width="163" height="30"/>
+                                <state key="normal" title="Natice Function"/>
+                                <connections>
+                                    <action selector="nativeClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lJ8-va-15g"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-206" y="367"/>
+        </scene>
+        <!--Facebook View Controller-->
+        <scene sceneID="iPV-7V-rz0">
+            <objects>
+                <viewController id="9pH-Ug-W2G" customClass="FacebookViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FAm-ju-OzB"/>
+                        <viewControllerLayoutGuide type="bottom" id="uAh-DW-gVP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lqv-bq-6dH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FacebookSDK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgH-xc-MQL">
+                                <rect key="frame" x="99" y="28" width="123" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogt-0f-WAB">
+                                <rect key="frame" x="0.0" y="28" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.75245452831782067" green="1" blue="0.85815502247899833" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="&lt;"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="Ga0-Jp-ZST"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5K-Ye-DcC">
+                                <rect key="frame" x="101" y="57" width="118" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginClick:" destination="9pH-Ug-W2G" eventType="touchUpInside" id="pbc-68-Ohu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRU-ne-MYg">
+                                <rect key="frame" x="101" y="95" width="118" height="30"/>
+                                <state key="normal" title="Share"/>
+                                <connections>
+                                    <action selector="shareClick:" destination="9pH-Ug-W2G" eventType="touchUpInside" id="Oo4-ww-4eu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRx-hG-9rT">
+                                <rect key="frame" x="101" y="133" width="118" height="30"/>
+                                <state key="normal" title="Firends"/>
+                                <connections>
+                                    <action selector="friendsClick:" destination="9pH-Ug-W2G" eventType="touchUpInside" id="UsI-Xf-uMY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1qv-vG-E0y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="268" y="367"/>
+        </scene>
+    </scenes>
+</document>
